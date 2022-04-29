@@ -29,7 +29,7 @@ const Navbar = () => {
         if (pathname == '/resume') setActiveItem('Resume')
     }, [])
     return (
-        <div className='flex justify-between px-5 py-3 my-3'>
+        <div className='flex justify-between px-5 py-3 dark:bg-dark-300 dark:bg-black-500 dark:text-white'>
             <span className='font-bold md:text-2xl text-xl border-b-4 text-green border-green'>{activeItem}</span>
             <div className='flex space-x-5 text-lg flex space-x-3'>
                 <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/'/>
